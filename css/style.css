@@ -64,8 +64,6 @@ span {
 /* Кнопки-навигации по страницам сайта */
 .site-nav.list {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px; 
     align-items: center;
 }
 .site-nav .item + .item {
@@ -81,6 +79,9 @@ span {
 }    
 .site-nav .link,
 .auth-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
