@@ -9,6 +9,7 @@
     --color-button-team: #F5F4FA;
     --color-footer-telefon: rgba(255, 255, 255, 0.6);
     --color-btn-active: #188CE8;
+    --color-border: #EEEEEE;
 }
 body{
     width: 1600px;
@@ -81,7 +82,7 @@ span {
 .auth-nav .link {
     padding-top: 32px;
     padding-bottom: 32px;
-    
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -279,8 +280,6 @@ span {
 }
 .portfolio-list > .item {
     flex-basis: calc((100% - 60px) / 3);
-
-    outline: 1px solid cornflowerblue;
 }
 .portfolio-link {
     text-decoration: none;
@@ -303,6 +302,13 @@ span {
 }
 .portfolio-list .img {
     margin-bottom: 20px;
+}
+.portfolio-list .item {
+    background: var(--color-text-white);
+    border: 1px solid var(--color-border);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);;
 }
 
 /* Кнопки */
