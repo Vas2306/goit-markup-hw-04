@@ -127,7 +127,7 @@ span {
     padding-right: 15px;
 }
 /* Секция Герой */
-.overlay {
+.hero.overlay {
     max-width: 1600px;
     height: 600px;
     text-align: center;
@@ -140,12 +140,15 @@ span {
     
     background-color: var(--background-color-hero-footer);
 }
-.hero-title {
+   .container-hero {
     width: 696px;
     padding-top: 200px;
-    margin-bottom: 30px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+} 
+   .hero-title {  
+    margin-bottom: 30px;
+ 
     color: var(--color-text-white);
     font-weight: 900;
     font-size: 44px;
