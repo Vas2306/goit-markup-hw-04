@@ -169,7 +169,8 @@ span {
     border-style: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.btn-hero:hover {
+.btn-hero:hover,
+.btn-hero:active {
     background-color: #188CE8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
