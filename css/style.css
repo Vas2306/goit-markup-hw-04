@@ -220,6 +220,7 @@ span {
 }
 .team-list .item {
     text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team-list .title {
     margin-bottom: 10px;
@@ -240,7 +241,6 @@ span {
 .img-our-team {
     margin-bottom: 30px;
 }
-
 /* Список кнопок для портфолио*/
 .butt-portfolio {
     display: flex;
