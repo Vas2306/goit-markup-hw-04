@@ -248,7 +248,7 @@ span {
 }
 .team-list .text {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     line-height: 1.19;
 }
@@ -257,6 +257,27 @@ span {
 } 
 .img-our-team {
     margin-bottom: 30px;
+}
+.team-list .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.social-media .item-social + .item-social {
+    margin-left: 22px;
+}
+/* ----------------------Набор иконок-клиентов*/
+.clients .section-title {
+    margin-bottom: 50px;
+}
+.clients .thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    outline: 1px solid #AFB1B8;
 }
 /* ----------------------Список кнопок для портфолио*/
 .butt-portfolio {
