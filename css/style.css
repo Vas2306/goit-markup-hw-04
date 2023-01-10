@@ -200,7 +200,19 @@ span {
   font-size: 14px;
   line-height: 1.71; 
 }
-
+.skill-list .thumb {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--color-button-team);
+    background-color: #eeeeee;
+}
+.skill-list .logo {
+    margin: 0;
+}
 /* -------------------Три одиноких цветных фото */
 .container.work {
     padding-top: 0;
