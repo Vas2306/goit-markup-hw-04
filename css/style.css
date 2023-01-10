@@ -102,7 +102,7 @@ span {
     margin-left: auto;
 }
 .auth-nav .item + .item {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .auth-nav .link {
     color: var(--color-text);
@@ -110,6 +110,10 @@ span {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--color-acent);
+}
+.auth-nav .logo {
+    margin-right: 10px;
+    vertical-align: middle;
 }
 /* --------------------Общее для всех секций */
 .section-title {
