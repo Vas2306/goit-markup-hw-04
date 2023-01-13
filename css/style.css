@@ -32,6 +32,20 @@ h1, h2, h3 {
     margin-bottom: 0;
     margin-top: 0;
 }
+/* Прячем заголовки, которые не имют визуализации на макете */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* -------------------------------Хедер */
 .header-container {
     display: flex;
@@ -329,7 +343,7 @@ span {
 
 .button-grey:hover,
 .button-grey:focus {
-    padding: 6px 25px;
+    /* padding: 6px 25px; */
 
     color: var(--color-text-white);
     background-color: var(--color-acent); 
@@ -338,14 +352,18 @@ span {
         0px 2px 2px rgba(0, 0, 0, 0.12);   
 }
 /* -----------------------Портфолио работ */
+.section-footer {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.portfolio-list > .item {
-    flex-basis: calc((100% - 60px) / 3);
-}
+/* .portfolio-list > .item {
+    flex-basis: calc((100% - 60px) / 3); 
+} */
 .portfolio-link {
     text-decoration: none;
 }
@@ -365,19 +383,19 @@ span {
 
     line-height: 1.88;
 }
-.portfolio-list .img {
-    margin-bottom: 20px;
-}
 .portfolio-list .item {
     background: var(--color-text-white);
-    border: 1px solid var(--color-border);
+   box-shadow: inset 0 0 0 1px #EEEEEE;
 }
 .portfolio-list .item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+.caption-photo {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 /* -------------------------------Кнопки */
 .button {
     color: var(--color-text-white);
