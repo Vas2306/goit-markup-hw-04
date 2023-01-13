@@ -10,6 +10,7 @@
     --color-footer-telefon: rgba(255, 255, 255, 0.6);
     --color-btn-active: #188CE8;
     --color-border: #EEEEEE;
+    --color-icon: #AFB1B8;
 }
 body{
     background-color: var(--color-text-white)
@@ -60,7 +61,7 @@ h1, h2, h3 {
     border-bottom: 1px solid #ECECEC;
 }
 /* ---------------------------------логотип */
-.logo {
+.header-container .logo {
     margin-right: 93px;
 
     color: var(--color-black-logo);
@@ -227,12 +228,13 @@ span {
     height: 120px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
     background-color: var(--color-button-team);
-    background-color: #eeeeee;
 }
 .skill-list .logo {
     margin: 0;
+}
+.logo-caption {
+    padding-top: 30px;
 }
 /* -------------------Три одиноких цветных фото */
 .section-work {
@@ -310,10 +312,28 @@ span {
 .clients .thumb {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 30px;
+}
+.clients .item {
     width: 170px;
     height: 92px;
-    outline: 1px solid #AFB1B8;
+}
+.clients .logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: var(--color-icon);
+}
+.clients .icon {
+    fill: currentColor;
+}
+.clients .item:hover .logo {
+    border: 1px solid var(--color-acent);
+    color: var(--color-acent);
 }
 /* ----------------------Список кнопок для портфолио*/
 .butt-portfolio {
@@ -405,8 +425,15 @@ span {
 .footer .logo {
     display: inline-block;
     margin-bottom: 20px;
-    
     color: var(--color-text-white);
+    margin-right: 93px;
+        
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
 }
 .footer {
     padding-bottom: 60px;
