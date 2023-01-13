@@ -126,7 +126,6 @@ span {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    outline: 1px solid #000000;
 }
 /* ----------------------------Секция Герой */
 .hero.overlay {
@@ -250,32 +249,38 @@ span {
 }
 .team-list .item {
     text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 .team-list .title {
     margin-bottom: 10px;
 
+    font-size: 16px;
     color: var(--color-title);
     font-weight: 500;
     line-height: 1.19;
+    margin-bottom: 10px;
 }
 .team-list .text {
     margin-top: 0;
     margin-bottom: 16px;
 
     line-height: 1.19;
+    color: var(--color-text);
 }
 .our-team {
     margin-bottom: 50px;
 } 
-.img-our-team {
-    margin-bottom: 30px;
+.footer-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .team-list .social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 30px;
 }
 .social-media .item-social + .item-social {
     margin-left: 22px;
@@ -386,16 +391,19 @@ span {
     color: var(--color-text-white);
 }
 .footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: var(--background-color-hero-footer);
 }
 .address {
     color: var(--color-text-white);
-    font-style: normal;
+    
     font-size: 14px;
     line-height: 1.71;
 }
 .address .link {
     color: var(--color-footer-telefon);
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
@@ -404,13 +412,9 @@ span {
 .address .link:focus {
     color: var(--color-acent);
 }
-.footer > .container {
-    padding-bottom: 60px;
-    padding-top: 60px;
-}
-.address p {
+.address .address-link {
     margin-bottom: 9px;
-    margin-top: 0;
+    /* margin-top: 0; */
 }
 .address .email {
     display: inline-block;
