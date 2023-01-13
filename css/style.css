@@ -12,9 +12,7 @@
     --color-border: #EEEEEE;
 }
 body{
-    width: 1600px;
-
-    background-color: var(--background-color);
+    background-color: var(--color-text-white)
     color: var(--color-text);
 
     font-family: 'Roboto', sans-serif;
@@ -45,7 +43,7 @@ h1, h2, h3 {
     margin-right: auto;
 }
 .header {
-    background-color: var(--color-text-white);
+    border-bottom: 1px solid #ECECEC;
 }
 /* ---------------------------------логотип */
 .logo {
@@ -124,34 +122,40 @@ span {
 }
 .container {
     width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 94px;
-    padding-top: 94px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: 1px solid #000000;
 }
 /* ----------------------------Секция Герой */
 .hero.overlay {
-    max-width: 1600px;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-image: linear-gradient(
      to right,   
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
     ),
-    url('../images/bgd.jpg');
-    
+    url('../images/bgd.jpg'); 
     background-color: var(--background-color-hero-footer);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
    .container-hero {
-    width: 696px;
-    padding-top: 200px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto; 
 } 
    .hero-title {  
+    max-width: 696px;
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
  
     color: var(--color-text-white);
     font-weight: 900;
@@ -179,6 +183,10 @@ span {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 /* --------------------SVG ешки с текстом под ними */
+.section-skill {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .skill-list {
     display: flex;
 }
@@ -214,6 +222,9 @@ span {
     margin: 0;
 }
 /* -------------------Три одиноких цветных фото */
+.section-work {
+    padding-bottom: 94px;
+}
 .container.work {
     padding-top: 0;
 }
@@ -229,6 +240,8 @@ span {
 }
 /* -----------------------Портреты команды */
 .section-team {
+    padding-bottom: 94px;
+    padding-top: 94px;
     background-color: var(--color-button-team);
 }
 .team-list {
@@ -268,6 +281,10 @@ span {
     margin-left: 22px;
 }
 /* ----------------------Набор иконок-клиентов*/
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .clients .section-title {
     margin-bottom: 50px;
 }
