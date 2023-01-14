@@ -331,10 +331,12 @@ span {
 .clients .icon {
     fill: currentColor;
 }
-.clients .item:hover .logo {
+.clients .logo:hover,
+.clients .logo:focus {
     border: 1px solid var(--color-acent);
     color: var(--color-acent);
 }
+ 
 /* ----------------------Список кнопок для портфолио*/
 .butt-portfolio {
     display: flex;
