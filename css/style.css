@@ -123,7 +123,9 @@ span {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--color-acent);
-}
+}  
+
+
 .auth-nav .logo {
     margin-right: 10px;
     vertical-align: middle;
@@ -474,7 +476,7 @@ fill: currentColor;
 }
 .footer {
     padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 60px; 
     background-color: var(--background-color-hero-footer);
 }
 .address {
@@ -501,4 +503,28 @@ fill: currentColor;
 .address .email {
     display: inline-block;
     margin-bottom: 9px;
+}
+.adrress-all {
+    outline: 1px solid #ff6363;
+}
+.call {
+   outline: 1px solid #53ff53; 
+}
+.footer .container {
+    display: flex;
+   gap: 70px;
+}
+.call .social-call {
+    display: flex;
+    justify-content: start;
+    grid-template: 10px;
+}
+.call .subtitle-call {
+    margin-bottom: 20px;
+    font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: var(--color-text-white);
 }
