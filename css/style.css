@@ -47,6 +47,10 @@ h1, h2, h3 {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+/* Превращаем все img в блоки */
+.img {
+    display: block;
+}
 /* -------------------------------Хедер */
 .header-container {
     display: flex;
@@ -248,9 +252,6 @@ span {
 .work .section-title {
     margin-bottom: 50px;
 }
-.work-list .img {
-    display: block;
-}
 .work-list {
     display: flex;
     justify-content: space-between;
@@ -441,6 +442,8 @@ fill: currentColor;
     margin-left: 24px;
 
     line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-text);
 }
 .portfolio-list .item {
     background: var(--color-text-white);
@@ -465,43 +468,50 @@ fill: currentColor;
     display: inline-block;
     margin-bottom: 20px;
     color: var(--color-text-white);
-    margin-right: 93px;
+   
         
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
         letter-spacing: 0.03em;
-        text-decoration: none;
+        text-decoration: none; 
 }
 .footer {
     padding-bottom: 60px;
     padding-top: 60px; 
     background-color: var(--background-color-hero-footer);
 }
-.address {
+/* .address {
     color: var(--color-text-white);
     
     font-size: 14px;
     line-height: 1.71;
-}
+} */
 .address .link {
-    color: var(--color-footer-telefon);
+    /* color: var(--color-footer-telefon); */
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
-.address .link:hover,
-.address .link:focus {
+.address .hover:hover,
+.address .hover:focus {
     color: var(--color-acent);
 }
 .address .address-link {
-    margin-bottom: 9px;
-    /* margin-top: 0; */
+    color: var(--color-text-white);
 }
 .address .email {
     display: inline-block;
+color: var(--color-footer-telefon);
+}
+.address .phone {
+    color: var(--color-footer-telefon);
+}
+
+.address .item {
     margin-bottom: 9px;
 }
 .adrress-all {
@@ -528,3 +538,4 @@ fill: currentColor;
     
         color: var(--color-text-white);
 }
+
