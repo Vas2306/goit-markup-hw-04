@@ -13,7 +13,7 @@
     --color-icon: #AFB1B8;
 }
 body{
-    background-color: var(--color-text-white)
+    background-color: var(--color-text-white);
     color: var(--color-text);
 
     font-family: 'Roboto', sans-serif;
@@ -123,10 +123,12 @@ span {
 }
 .auth-nav .link {
     color: var(--color-text);
+    fill: var(--color-text);
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--color-acent);
+    fill: var(--color-acent);
 }  
 
 
