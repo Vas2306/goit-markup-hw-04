@@ -555,7 +555,8 @@ color: var(--color-footer-telefon);
 .footer .call-social-icon {
     fill: currentColor;
 }
-.footer .link-call:hover {
+.footer .link-call:hover,
+.footer .link-call:focus{
 background-color: var(--color-acent);
 }
 .footer .call {
