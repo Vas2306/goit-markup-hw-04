@@ -151,6 +151,10 @@ span {
     margin-left: auto;
 }
 /* ----------------------------Секция Герой */
+.hero {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 .hero.overlay {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -242,7 +246,7 @@ span {
     margin: 0;
 }
 .logo-caption {
-    padding-top: 30px;
+    margin-top: 30px;
 }
 /* -------------------Три одиноких цветных фото */
 .section-work {
@@ -330,17 +334,6 @@ fill: currentColor;
     color: var(--color-text-white);
 }
 
-.footer-card .link-team {}
-
-.list {}
-
-.social-media {}
-
-.item-social {}
-
-.link-team {}
-
-
 /* ----------------------Набор иконок-клиентов*/
 .section-clients {
     padding-top: 94px;
@@ -394,7 +387,6 @@ fill: currentColor;
 
     color: var(--color-title);
     background-color: var(--color-button-team);
-    background-color: rgb(234, 234, 234);
     font-family: inherit;
     font-size: inherit;
     font-weight: 500;
@@ -533,9 +525,11 @@ color: var(--color-footer-telefon);
 .footer .address-footer {
     display: flex;
     gap: 70px;
+    align-items: baseline;
 }
 .footer .subtitle-call {
     margin-bottom: 20px;
+    font-weight: 700;
 }
 .footer .item-social-call {
     width: 44px;
@@ -558,7 +552,4 @@ color: var(--color-footer-telefon);
 .footer .link-call:hover,
 .footer .link-call:focus{
 background-color: var(--color-acent);
-}
-.footer .call {
-    padding-top: 12px;
 }
